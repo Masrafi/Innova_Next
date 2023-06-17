@@ -17,7 +17,7 @@ class _UserDetailsState extends State<UserDetails> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        margin: EdgeInsets.only(top: 80, left: 20, right: 20),
+        margin: const EdgeInsets.only(top: 80, left: 20, right: 20),
         child: Column(
           children: [
             CircleAvatar(

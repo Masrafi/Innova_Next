@@ -16,14 +16,14 @@ class UserList extends StatelessWidget {
           if (snapshot.hasData) {
             return Column(
               children: [
-                SizedBox(
+                const SizedBox(
                   height: 100,
                 ),
                 SizedBox(
                   height: 500,
                   width: double.infinity,
                   child: ListView.builder(
-                      padding: EdgeInsets.all(10),
+                      padding: const EdgeInsets.all(10),
                       physics: const NeverScrollableScrollPhysics(),
                       itemCount: snapshot.data!.data!.length,
                       itemBuilder: (context, index) {
@@ -60,12 +60,12 @@ class UserList extends StatelessWidget {
                                         .data!.data![index].avatar
                                         .toString()),
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     width: 20,
                                   ),
                                   Text(
                                     "Name: ${snapshot.data!.data![index].firstName} ${snapshot.data!.data![index].lastName}",
-                                    style: TextStyle(
+                                    style: const TextStyle(
                                       color: Colors.black,
                                     ),
                                   ),
@@ -90,7 +90,7 @@ class UserList extends StatelessWidget {
             return Text('${snapshot.error}');
           }
           // By default, show a loading spinner
-          return CircularProgressIndicator();
+          return const CircularProgressIndicator();
         },
       ),
     );

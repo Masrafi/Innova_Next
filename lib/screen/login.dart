@@ -18,14 +18,14 @@ class Login extends StatelessWidget {
               child: SingleChildScrollView(
                 child: Column(
                   children: [
-                    SizedBox(
+                    const SizedBox(
                       height: 60,
                     ),
                     Image.asset("assets/tIcon.png"),
-                    SizedBox(
+                    const SizedBox(
                       height: 30,
                     ),
-                    Align(
+                    const Align(
                       alignment: Alignment.topLeft,
                       child: Text(
                         "Login Details",
@@ -35,19 +35,19 @@ class Login extends StatelessWidget {
                         ),
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 15,
                     ),
                     TextFormField(
                       controller: email,
                       validator: (email) =>
                           email!.isValidEmail() ? null : "Check your email",
-                      decoration: InputDecoration(
+                      decoration: const InputDecoration(
                         hintText: "Email",
                         border: OutlineInputBorder(),
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 10,
                     ),
                     TextFormField(
@@ -63,13 +63,13 @@ class Login extends StatelessWidget {
                       },
                       decoration: new InputDecoration(
                         hintText: "Password",
-                        border: OutlineInputBorder(),
+                        border: const OutlineInputBorder(),
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 5,
                     ),
-                    Align(
+                    const Align(
                       alignment: Alignment.topRight,
                       child: Text(
                         "Forgot Password ?",
@@ -79,7 +79,7 @@ class Login extends StatelessWidget {
                         ),
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 30,
                     ),
                     GestureDetector(
@@ -89,7 +89,7 @@ class Login extends StatelessWidget {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
-                                builder: (context) => UserList(),
+                                builder: (context) => const UserList(),
                               ),
                             );
                           }
@@ -100,7 +100,7 @@ class Login extends StatelessWidget {
                             top: MediaQuery.of(context).size.height / 45,
                             //top: displayWidth(context) * 0.1,
                           ),
-                          decoration: BoxDecoration(
+                          decoration: const BoxDecoration(
                             color: Colors.blue,
                             borderRadius: BorderRadius.all(
                               Radius.circular(5),
@@ -118,7 +118,7 @@ class Login extends StatelessWidget {
                             ),
                           ),
                         )),
-                    SizedBox(
+                    const SizedBox(
                       height: 30,
                     ),
                     Row(
@@ -129,7 +129,7 @@ class Login extends StatelessWidget {
                           width: 100,
                           color: Colors.blue,
                         ),
-                        Text("Or Sign up with"),
+                        const Text("Or Sign up with"),
                         Container(
                           height: 1,
                           width: 100,
@@ -137,7 +137,7 @@ class Login extends StatelessWidget {
                         ),
                       ],
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 20,
                     ),
                     Row(
@@ -147,29 +147,29 @@ class Login extends StatelessWidget {
                         Container(
                           height: 50,
                           width: 50,
-                          decoration: BoxDecoration(
+                          decoration: const BoxDecoration(
                             color: Colors.orange,
                             shape: BoxShape.circle,
                           ),
                           child: Image.asset("assets/Google logo.png"),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 15,
                         ),
                         Container(
                           height: 50,
                           width: 50,
-                          decoration: BoxDecoration(
+                          decoration: const BoxDecoration(
                               color: Colors.orange, shape: BoxShape.circle),
                           child: Image.asset("assets/Facbook.png"),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 15,
                         ),
                         Container(
                           height: 50,
                           width: 50,
-                          decoration: BoxDecoration(
+                          decoration: const BoxDecoration(
                               color: Colors.orange, shape: BoxShape.circle),
                           child: Image.asset("assets/Group.png"),
                         )
