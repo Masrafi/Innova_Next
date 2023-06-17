@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:innova_next/screen/user.dart';
+import 'package:innova_next/screen/user_list.dart';
 
 class Login extends StatelessWidget {
   TextEditingController email = TextEditingController();
